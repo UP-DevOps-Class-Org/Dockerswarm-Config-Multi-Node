@@ -64,3 +64,7 @@ root@swarm-node-1:~# docker node ps
 ```
 <img width="929" alt="Screenshot 2023-01-25 at 12 26 26 pm" src="https://user-images.githubusercontent.com/34917417/214486957-87782c25-4509-42fe-b919-43fa3468ac35.png">
 
+**Copy project directory to swarm-node-1 host
+```
+scp -r ms-deployment 
+```
