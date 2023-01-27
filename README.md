@@ -60,7 +60,7 @@ root@swarm-node-2:~# docker swarm join-token manager
 ```
 ***If Another Node already joined use following command to check available nodes***
 ```
-root@swarm-node-1:~# docker node ps
+root@swarm-node-1:~# docker node ls
 ```
 <img width="929" alt="Screenshot 2023-01-25 at 12 26 26 pm" src="https://user-images.githubusercontent.com/34917417/214486957-87782c25-4509-42fe-b919-43fa3468ac35.png">
 
@@ -84,4 +84,11 @@ root@swarm-node-1:/opt/Deployment# ./start.sh  or root@swarm-node-1:~# docker st
 root@swarm-node-1:/opt/Deployment# docker service ls 
 ```
 <img width="1363" alt="Screenshot 2023-01-27 at 11 36 01 am" src="https://user-images.githubusercontent.com/34917417/215010310-98d713ac-0b49-413d-958e-0197f6932e9d.png">
+
+***Another node, Called swarm-node-2 Use follwing command to check running services***
+
+```
+root@swarm-node-2:~# docker ps 
+```
+<img width="1651" alt="Screenshot 2023-01-27 at 11 38 56 am" src="https://user-images.githubusercontent.com/34917417/215010600-36c76f35-71e6-45aa-97f2-af0e97e47858.png">
 
