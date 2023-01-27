@@ -64,9 +64,9 @@ root@swarm-node-1:~# docker node ls
 ```
 <img width="929" alt="Screenshot 2023-01-25 at 12 26 26 pm" src="https://user-images.githubusercontent.com/34917417/214486957-87782c25-4509-42fe-b919-43fa3468ac35.png">
 
-**Manual Copy project directory to swarm-node-1 host
+**Manual Copy project directory to swarm-node-1 host**
 ```
-scp -r Deployment root@54.157.141.39:/opt/
+(base) kivsithvothy@Kivs-MBP Demo-Projects % scp -r Deployment root@54.157.141.39:/opt/                                               
 ```
 **Check host IP**
 
@@ -74,7 +74,7 @@ scp -r Deployment root@54.157.141.39:/opt/
 curl ifconfig.me
 ```
 
-**Use the following command to start deploy swarm services **
+**Use the following command to start deploy swarm services**
 
 ```
 root@swarm-node-1:~# docker login nexus.sithvothykiv.site:8888 
