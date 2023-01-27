@@ -64,7 +64,24 @@ root@swarm-node-1:~# docker node ps
 ```
 <img width="929" alt="Screenshot 2023-01-25 at 12 26 26 pm" src="https://user-images.githubusercontent.com/34917417/214486957-87782c25-4509-42fe-b919-43fa3468ac35.png">
 
-**Copy project directory to swarm-node-1 host
+**Manual Copy project directory to swarm-node-1 host
 ```
-scp -r ms-deployment 
+scp -r Deployment root@54.157.141.39:/opt/
 ```
+**Check host IP**
+
+```
+curl ifconfig.me
+```
+
+**Use the following command to start deploy swarm services **
+
+```
+root@swarm-node-1:~# docker login nexus.sithvothykiv.site:8888 
+root@swarm-node-1:~# cd /opt/Deployment/
+root@swarm-node-1:/opt/Deployment# ./start.sh  or root@swarm-node-1:~# docker stack deploy node --compose-file docker-compose.yml --with-registry-auth
+
+root@swarm-node-1:/opt/Deployment# docker service ls 
+```
+<img width="1363" alt="Screenshot 2023-01-27 at 11 36 01 am" src="https://user-images.githubusercontent.com/34917417/215010310-98d713ac-0b49-413d-958e-0197f6932e9d.png">
+
